@@ -16,7 +16,9 @@
         <strong>{{$post->title}}</strong>
         <strong>{{$post->content}}</strong>
         <a href="{{$post->id}}/edit">Edit Post</a>
+        <td><a style="color: red;" href="/delete/{{$post->id}}">Delete</a></td>
+        
     </div>
-    
+   
 </body>
 </html>

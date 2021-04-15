@@ -26,6 +26,7 @@
     <input type="text" class="form-control" name="content" placeholder="Enter content" value="{{$post->content}}"> 
   </div>
   
+  
   <button type="submit" class="btn btn-primary">Update</button>
 </form>
     </div>
