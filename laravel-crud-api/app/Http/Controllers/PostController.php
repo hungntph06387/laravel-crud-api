@@ -93,14 +93,16 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update($id, Post $post)
     {
+        
+        $post = Post::find($id);
         $post->slug = request('slug');
         $post->title = request('title');
         $post->content = request('content');
 
-        $post->save();
-        return redirect('/layouts.show');
+        $post->update();
+        return view('layouts.show', compact('post'));
 
         
 

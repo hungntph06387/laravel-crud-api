@@ -26,7 +26,7 @@
     <input type="text" class="form-control" name="content" placeholder="Enter content" value="{{$post->content}}"> 
   </div>
   
-  <a href="/post/{id}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Update</a>
+  <button type="submit" class="btn btn-primary">Update</button>
 </form>
     </div>
 </body>
