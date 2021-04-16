@@ -56,7 +56,7 @@ class PostController extends Controller
         $post->content = request('content');
 
         $post->save();
-        return view('layouts.index');
+        return redirect('/posts');
     }
 
     /**
@@ -93,7 +93,7 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update($id, Post $post)
+    public function update($id)
     {
         
         $post = Post::find($id);

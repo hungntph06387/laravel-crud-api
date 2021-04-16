@@ -28,6 +28,7 @@
   
   
   <button type="submit" class="btn btn-primary">Update</button>
+  <a href="/post/{{$post->id}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back</a>
 </form>
     </div>
 </body>
