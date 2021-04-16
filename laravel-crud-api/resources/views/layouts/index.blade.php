@@ -12,7 +12,7 @@
     <div class="container">
     <h1 style="text-align: center;">List Post</h1>
     <a href="/create" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">New Post</a>
-    <table class="table table-striped">
+    <table class="table">
         <thead>
            <tr>
            <th scope="col">#</th>
@@ -22,11 +22,11 @@
            
            </tr>
         </thead>
-    </table>
+    
     <tbody>
     @foreach($post as $post)
        <tr>
-             <th scope="row">{{$post->id}}</th>
+             <td scope="row">{{$post->id}}</td>
              <td><a href="post/{{$post->id}}">{{$post->slug}}</a></td>      
              <td>{{$post->title}}</td>
              <td>{{$post->content}}</td>
@@ -34,6 +34,7 @@
        </tr>
     @endforeach
     </tbody>
+    </table>
     </div>
 </body>
 </html>
