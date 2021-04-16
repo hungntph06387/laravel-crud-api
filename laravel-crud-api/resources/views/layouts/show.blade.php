@@ -31,7 +31,7 @@
            <th scope="col" style="color: red;">Action</th>
            </tr>
         </thead>
-    </table>
+    
     <tbody>
     <tr>
              <th scope="row">{{$post->id}}</th>
@@ -46,6 +46,7 @@
     </tr>
     
     </tbody>
+    </table>
     </div>
    
 </body>
