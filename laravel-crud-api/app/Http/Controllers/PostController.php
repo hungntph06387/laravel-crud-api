@@ -41,14 +41,6 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        // $post = new Post();
-        // $post->slug = $request->slug;
-        // $post->title=$request->title;
-        // $post->content=$request->content;
-        // if($post->save()){
-        //     return new PostFactory($post);
-        // }
-        // return $request->all();
 
         $post = new Post();
         $post->slug = request('slug');
